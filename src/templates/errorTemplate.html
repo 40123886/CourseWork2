@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link href="{{ url_for('static', filename="css/bootstrap.min.css") }}"
+    rel="stylesheet"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+       <h2 class="text-danger"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> Error Occurred</h2>
+     </div> 
+        <p><a href="javascript:history.back()">Return to previous page.</a></p>
+
+        {% block content %}
+
+        {% endblock %}
+    </div>
+  </body>
+</html>
+

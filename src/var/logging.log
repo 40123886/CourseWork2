@@ -1,0 +1,11 @@
+INFO | 2016-11-07 17:50:13,645 | index | root | Index - /
+ERROR | 2016-11-07 17:50:13,933 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-07 17:50:18,217 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-07 17:50:24,600 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-07 17:50:27,888 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-07 17:50:30,207 | index | page_not_found | 404: Not Found
+INFO | 2016-11-07 17:56:21,636 | index | root | Index - /
+ERROR | 2016-11-07 17:56:22,129 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-07 17:56:51,246 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-07 17:56:51,356 | index | page_not_found | 404: Not Found
+INFO | 2016-11-07 17:57:16,633 | index | root | Index - /
