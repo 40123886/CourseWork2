@@ -9,3 +9,47 @@ ERROR | 2016-11-07 17:56:22,129 | index | page_not_found | 404: Not Found
 ERROR | 2016-11-07 17:56:51,246 | index | page_not_found | 404: Not Found
 ERROR | 2016-11-07 17:56:51,356 | index | page_not_found | 404: Not Found
 INFO | 2016-11-07 17:57:16,633 | index | root | Index - /
+INFO | 2016-11-14 17:49:55,800 | index | root | Index - /
+ERROR | 2016-11-14 17:49:57,443 | index | page_not_found | 404: Not Found
+INFO | 2016-11-14 17:53:07,798 | index | root | Index - /
+INFO | 2016-11-14 17:53:13,553 | index | root | Index - /
+INFO | 2016-11-14 17:53:14,572 | index | root | Index - /
+INFO | 2016-11-14 17:53:37,733 | index | root | Index - /
+INFO | 2016-11-14 17:54:20,399 | index | root | Index - /
+INFO | 2016-11-14 17:54:22,694 | index | root | Index - /
+INFO | 2016-11-14 17:54:23,400 | index | root | Index - /
+INFO | 2016-11-14 17:54:23,652 | index | root | Index - /
+INFO | 2016-11-14 17:54:23,913 | index | root | Index - /
+INFO | 2016-11-14 17:54:24,128 | index | root | Index - /
+INFO | 2016-11-14 17:54:24,425 | index | root | Index - /
+INFO | 2016-11-14 17:55:05,846 | index | root | Index - /
+INFO | 2016-11-14 18:04:15,405 | index | root | Index - /
+INFO | 2016-11-14 18:06:27,066 | index | root | Index - /
+INFO | 2016-11-14 18:07:24,450 | index | root | Index - /
+INFO | 2016-11-14 18:07:56,312 | index | root | Index - /
+INFO | 2016-11-14 18:09:09,112 | index | root | Index - /
+ERROR | 2016-11-14 18:09:09,173 | index | root | expected token 'end of print statement', got 'rel'
+INFO | 2016-11-14 18:09:11,811 | index | root | Index - /
+ERROR | 2016-11-14 18:09:11,973 | index | root | expected token 'end of print statement', got 'rel'
+INFO | 2016-11-14 18:09:38,183 | index | root | Index - /
+ERROR | 2016-11-14 18:09:38,219 | index | root | expected token 'end of print statement', got 'rel'
+INFO | 2016-11-14 18:10:26,111 | index | root | Index - /
+ERROR | 2016-11-14 18:10:26,146 | index | root | expected token 'end of print statement', got 'rel'
+INFO | 2016-11-14 18:10:55,172 | index | root | Index - /
+ERROR | 2016-11-14 18:10:55,410 | index | root | expected token 'end of print statement', got 'rel'
+INFO | 2016-11-14 18:11:41,500 | index | root | Index - /
+ERROR | 2016-11-14 18:11:41,543 | index | root | expected token 'end of print statement', got 'string'
+INFO | 2016-11-14 18:12:50,041 | index | root | Index - /
+ERROR | 2016-11-14 18:12:50,233 | index | page_not_found | 404: Not Found
+INFO | 2016-11-14 18:13:02,799 | index | root | Index - /
+INFO | 2016-11-14 18:13:40,239 | index | root | Index - /
+INFO | 2016-11-14 18:13:41,762 | index | root | Index - /
+INFO | 2016-11-14 18:13:41,972 | index | root | Index - /
+INFO | 2016-11-14 18:13:42,300 | index | root | Index - /
+INFO | 2016-11-14 18:13:42,493 | index | root | Index - /
+INFO | 2016-11-14 18:14:12,114 | index | root | Index - /
+INFO | 2016-11-14 18:54:33,964 | index | root | Index - /
+INFO | 2016-11-14 18:55:47,840 | index | root | Index - /
+INFO | 2016-11-14 18:58:59,991 | index | root | Index - /
+INFO | 2016-11-14 18:59:52,553 | index | root | Index - /
+INFO | 2016-11-14 19:00:35,153 | index | root | Index - /
