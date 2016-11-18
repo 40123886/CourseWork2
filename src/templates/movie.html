@@ -6,9 +6,11 @@
     <table class="movies table table-striped table-hover table-responsive">
     {% for movie in movies %}
       <tr>
+        <th></th>
         <th>Title</th>
       </tr>
       <tr>
+        <td><img src="{{ movie.poster }}"></td>
         <td>{{ movie.title }}</td>
       </tr>
     {% endfor %}

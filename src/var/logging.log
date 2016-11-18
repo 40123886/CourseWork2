@@ -93,3 +93,7 @@ INFO | 2016-11-18 17:14:31,787 | index | movie | Select Movies Page/movies
 INFO | 2016-11-18 17:16:07,517 | index | movie | Select Movies Page/movies
 INFO | 2016-11-18 17:17:19,796 | index | movie | Select Movies Page/movies
 INFO | 2016-11-18 17:18:40,812 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 18:07:13,479 | index | movie | Select Movies Page/movies
+ERROR | 2016-11-18 18:07:13,527 | index | movie | no such column: rowid
+INFO | 2016-11-18 18:07:57,371 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 18:10:01,772 | index | movie | Select Movies Page/movies

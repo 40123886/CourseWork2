@@ -43,8 +43,9 @@ def movie():
   app.logger.info("Select Movies Page" + this_route)
   try:
     db = get_db()
-    cursor = db.execute('SELECT rowid, title FROM movie')
-    movies = [dict(id=row[0], title=row[1]) for row in cursor.fetchall()]
+    cursor = db.execute('''SELECT m.rowid, title, poster_path FROM movie m INNER
+    JOIN poster p ON m.id=p.movie_id ''')
+    movies = [dict(id=row[0], title=row[1], poster=row[2]) for row in cursor.fetchall()]
     return render_template('movie.html', movies = movies)
   except Exception, e:
     app.logger.error(e)
