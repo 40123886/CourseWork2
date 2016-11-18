@@ -1,10 +1,32 @@
 import ConfigParser
 import logging
+import sqlite3
 
 from logging.handlers import RotatingFileHandler
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, g
 
 app = Flask(__name__)
+MovieDB = 'var/MovieDB.db'
+
+def get_db():
+  db = getattr(g, 'db', None)
+  if  db is None:
+        db = sqlite3.connect(MovieDB)
+        g.db = db
+  return db
+
+@app.teardown_appcontext
+def close_db_connection(exception):
+    db = getattr(g, 'db', None)
+    if db is not None:
+      db.close()
+
+def init_db():
+    with app.app_context():
+        db = get_db()
+        with app.open_resource('schema.sql', mode='r') as f:
+            db.cursor().executescript(f.read())
+        db.commit()
 
 @app.route('/')
 def root():
@@ -12,6 +34,18 @@ def root():
   app.logger.info("Index - " + this_route)
   try:
     return render_template('index.html')
+  except Exception, e:
+    app.logger.error(e)
+
+@app.route('/movies')
+def movie():
+  this_route = url_for('movie')
+  app.logger.info("Select Movies Page" + this_route)
+  try:
+    db = get_db()
+    cursor = db.execute('SELECT rowid, title FROM movie')
+    movies = [dict(id=row[0], title=row[1]) for row in cursor.fetchall()]
+    return render_template('movie.html', movies = movies)
   except Exception, e:
     app.logger.error(e)
 

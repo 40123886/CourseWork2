@@ -1,0 +1,18 @@
+{% extends "baseTemplate.html" %}
+{% block content %}
+<div class="container">
+  <h1 class="page-header">Select a Movie</h1>
+  <div class="table-responsive">
+    <table class="movies table table-striped table-hover table-responsive">
+    {% for movie in movies %}
+      <tr>
+        <th>Title</th>
+      </tr>
+      <tr>
+        <td>{{ movie.title }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+  </div>
+</div>
+{% endblock %}

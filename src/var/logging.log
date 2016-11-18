@@ -53,3 +53,43 @@ INFO | 2016-11-14 18:55:47,840 | index | root | Index - /
 INFO | 2016-11-14 18:58:59,991 | index | root | Index - /
 INFO | 2016-11-14 18:59:52,553 | index | root | Index - /
 INFO | 2016-11-14 19:00:35,153 | index | root | Index - /
+INFO | 2016-11-17 14:43:54,155 | index | root | Index - /
+INFO | 2016-11-17 14:44:06,540 | index | root | Index - /
+INFO | 2016-11-17 14:44:12,510 | index | root | Index - /
+INFO | 2016-11-17 16:29:07,499 | index | root | Index - /
+INFO | 2016-11-18 15:59:38,582 | index | root | Index - /
+INFO | 2016-11-18 15:59:43,907 | index | root | Index - /
+INFO | 2016-11-18 15:59:45,522 | index | root | Index - /
+INFO | 2016-11-18 15:59:45,991 | index | root | Index - /
+INFO | 2016-11-18 15:59:50,165 | index | root | Index - /
+INFO | 2016-11-18 16:27:31,147 | index | root | Index - /
+INFO | 2016-11-18 16:27:41,442 | index | movie | Movie Selected from db/movies
+ERROR | 2016-11-18 16:27:41,468 | index | movie | global name 'db' is not defined
+INFO | 2016-11-18 16:31:25,066 | index | movie | Movie Selected from db/movies
+ERROR | 2016-11-18 16:31:25,081 | index | movie | global name 'db' is not defined
+INFO | 2016-11-18 16:33:38,704 | index | movie | Movie Selected from db/movies
+ERROR | 2016-11-18 16:33:38,736 | index | movie | global name 'db' is not defined
+INFO | 2016-11-18 16:40:27,311 | index | movie | Select Movies Page/movies
+ERROR | 2016-11-18 16:40:27,353 | index | movie | global name 'db' is not defined
+INFO | 2016-11-18 16:45:22,929 | index | movie | Select Movies Page/movies
+ERROR | 2016-11-18 16:45:22,981 | index | movie | 'sqlite3.Connection' object has no attribute 'exectue'
+INFO | 2016-11-18 16:45:50,089 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 16:47:49,958 | index | root | Index - /
+INFO | 2016-11-18 16:47:54,849 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 16:49:02,139 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 16:52:08,938 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 16:52:41,083 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 16:55:51,086 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 16:57:21,367 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 16:59:25,343 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 17:00:16,333 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 17:03:34,842 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 17:04:16,904 | index | movie | Select Movies Page/movies
+ERROR | 2016-11-18 17:04:17,070 | index | movie | 'entry' is undefined
+INFO | 2016-11-18 17:04:47,104 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 17:08:38,579 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 17:12:15,431 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 17:14:31,787 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 17:16:07,517 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 17:17:19,796 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 17:18:40,812 | index | movie | Select Movies Page/movies
