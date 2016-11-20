@@ -72,14 +72,14 @@ def selected_movie():
   this_route = url_for('selected_movie')
   app.logger.info("Selected a movie" + this_route)
   try:
+    movieid = request.args.get('movieid', '')
     db = get_db()
     cursor = db.execute('''SELECT title, tagline, overview, runtime,
-    release_date, revenue, poster_path, genre FROM movie m INNER JOIN poster p
-    ON m.id=p.movie_id INNER JOIN movie_genre_key mgk ON mgk.movie_id=m.id
-    INNER JOIN genre g ON g.id=mgk.genre_id WHERE m.id = 1 ''')
+    release_date, revenue, poster, genre FROM movie m INNER JOIN movie_genre_key mgk ON mgk.movie_id=m.id
+    INNER JOIN genre g ON g.id=mgk.genre_id WHERE m.id = ? ''', [movieid])
     movie = [dict(title=row[0], tagline=row[1], overview=row[3]) for row in
     cursor.fetchall()]
-    return render_template('selected_movie.html', movie=movie)
+    return render_template('selected_movie.html', movie=movie, movieid=movieid)
   except Exception, e:
     app.logger.error(e)
 

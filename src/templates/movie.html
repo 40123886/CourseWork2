@@ -3,18 +3,16 @@
 <div class="container">
   <h1 class="page-header">Select a Movie</h1>
   <div class="table-responsive">
-  <form action="{{ url_for('selected_movie')}}" method="POST" name="post">
     <table class="movies table table-striped table-hover table-responsive">
     {% for movie in movies %}
       <tr>
         <td><img src="{{ movie.poster }}" height="200px"></td>
         <td>{{ movie.title }}</td>
-        <td><!--<a href="/movies/?movieid={{ movie.id }}">-->
-        <button type="submit" class="btn btn-default" name="movieid" value="{{ movie.id }}">View</button></td>
+        <td><a class="btn btn-default" href="{{
+        url_for('selected_movie')+"?movieid="+movie.id|string }}">View</a></td>
       </tr>
     {% endfor %}
     </table>
-  </form>
   </div>
 </div>
 {% endblock %}
