@@ -1,0 +1,18 @@
+{% extends "baseTemplate.html" %}
+{% block content %}
+<div class="container">
+  <h1 class="page-header">Select an Actor</h1>
+  <div class="table-responsive">
+    <table class="movies table table-striped table-hover table-responsive">
+    {% for actor in actors %}
+      <tr>
+        <td><img src="{{ actor.picture }}" height="200px"></td>
+        <td>{{ actor.birth_name+" ("+actor.first_name+ " "  +actor.last_name+")" }}</td>
+        <td><button class="btn btn-default">View</button><td>
+      </tr>
+    {% endfor %}
+    </table>
+  </form>
+  </div>
+</div>
+{% endblock %}

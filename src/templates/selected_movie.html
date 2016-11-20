@@ -1,0 +1,8 @@
+{% extends "baseTemplate.html" %}
+{% block content %}
+<div class="container">
+{% for movie in movie %}
+  <h1 class="page-header">{{ movie.title }}</h1>
+{% endfor %}
+</div>
+{% endblock %}

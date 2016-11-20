@@ -3,7 +3,7 @@ import logging
 import sqlite3
 
 from logging.handlers import RotatingFileHandler
-from flask import Flask, render_template, url_for, g
+from flask import Flask, render_template, url_for, g, request
 
 app = Flask(__name__)
 MovieDB = 'var/MovieDB.db'
@@ -33,20 +33,53 @@ def root():
   this_route = url_for('.root')
   app.logger.info("Index - " + this_route)
   try:
-    return render_template('index.html')
+    db = get_db()
+    cursor = db.execute(''' SELECT poster, title, tagline, overview FROM movie
+    ORDER BY id DESC LIMIT 1''')
+    movie = [dict(poster=row[0], title=row[1], tagline=row[2], overview=row[3])
+    for row in cursor.fetchall()]
+    return render_template('index.html', movies = movie)
   except Exception, e:
     app.logger.error(e)
 
 @app.route('/movies')
-def movie():
-  this_route = url_for('movie')
+def movies():
+  this_route = url_for('movies')
   app.logger.info("Select Movies Page" + this_route)
   try:
     db = get_db()
-    cursor = db.execute('''SELECT m.rowid, title, poster_path FROM movie m INNER
-    JOIN poster p ON m.id=p.movie_id ''')
+    cursor = db.execute('''SELECT rowid, title, poster FROM movie ''')
     movies = [dict(id=row[0], title=row[1], poster=row[2]) for row in cursor.fetchall()]
     return render_template('movie.html', movies = movies)
+  except Exception, e:
+    app.logger.error(e)
+
+@app.route('/actors')
+def actors():
+  this_route = url_for('actors')
+  app.logger.info("Select Actor Page" + this_route)
+  try:
+    db = get_db()
+    cursor = db.execute('''SELECT rowid, first_name, last_name, birth_name, picture FROM actor ''')
+    actors = [dict(id=row[0], first_name=row[1], last_name=row[2],
+    birth_name=row[3], picture=row[4]) for row in cursor.fetchall()]
+    return render_template('actor.html', actors = actors)
+  except Exception, e:
+    app.logger.error(e)
+
+@app.route('/movies/selected', methods=['POST', 'GET'])
+def selected_movie():
+  this_route = url_for('selected_movie')
+  app.logger.info("Selected a movie" + this_route)
+  try:
+    db = get_db()
+    cursor = db.execute('''SELECT title, tagline, overview, runtime,
+    release_date, revenue, poster_path, genre FROM movie m INNER JOIN poster p
+    ON m.id=p.movie_id INNER JOIN movie_genre_key mgk ON mgk.movie_id=m.id
+    INNER JOIN genre g ON g.id=mgk.genre_id WHERE m.id = 1 ''')
+    movie = [dict(title=row[0], tagline=row[1], overview=row[3]) for row in
+    cursor.fetchall()]
+    return render_template('selected_movie.html', movie=movie)
   except Exception, e:
     app.logger.error(e)
 

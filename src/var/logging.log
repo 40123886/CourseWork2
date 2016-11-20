@@ -97,3 +97,227 @@ INFO | 2016-11-18 18:07:13,479 | index | movie | Select Movies Page/movies
 ERROR | 2016-11-18 18:07:13,527 | index | movie | no such column: rowid
 INFO | 2016-11-18 18:07:57,371 | index | movie | Select Movies Page/movies
 INFO | 2016-11-18 18:10:01,772 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 18:13:33,918 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 18:44:58,444 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 18:45:16,527 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 18:46:00,664 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 18:46:09,330 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 18:46:25,836 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 18:46:50,444 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 18:47:26,093 | index | movie | Select Movies Page/movies
+INFO | 2016-11-18 18:48:03,247 | index | root | Index - /
+INFO | 2016-11-20 14:39:12,132 | index | root | Index - /
+INFO | 2016-11-20 14:39:19,263 | index | movie | Select Movies Page/movies
+INFO | 2016-11-20 15:04:27,985 | index | movie | Select Movies Page/movies
+INFO | 2016-11-20 15:07:52,832 | index | movie | Select Movies Page/movies
+INFO | 2016-11-20 15:10:18,518 | index | movie | Select Movies Page/movies
+INFO | 2016-11-20 15:40:50,854 | index | movie | Select Movies Page/movies
+ERROR | 2016-11-20 15:40:50,999 | index | movie | 'post' is undefined
+INFO | 2016-11-20 15:48:27,302 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-20 15:48:27,985 | index | movies | 'post' is undefined
+INFO | 2016-11-20 15:48:59,012 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 15:58:53,943 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-20 15:58:54,607 | index | movies | 'post' is undefined
+INFO | 2016-11-20 15:59:41,558 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:01:26,700 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:04:34,013 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-20 16:04:34,146 | index | movies | 'post' is undefined
+INFO | 2016-11-20 16:05:19,672 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:10:49,725 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:11:29,997 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:12:05,154 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:12:08,123 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:19:40,169 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:20:07,669 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:22:21,306 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:22:23,685 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:25:46,736 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:27:50,404 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:28:00,127 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:30:10,642 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:30:13,317 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:38:44,465 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 16:53:49,143 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-20 16:55:15,438 | index | page_not_found | 404: Not Found
+INFO | 2016-11-20 17:02:57,655 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:02:57,746 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:05:41,808 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:09:21,759 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:09:44,890 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:12:40,220 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:15:33,796 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:22:16,610 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:23:09,564 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:26:04,115 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:28:33,215 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:31:58,284 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:32:44,883 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:34:48,244 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:35:15,829 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:35:39,156 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:36:55,612 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:40:43,112 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:44:07,675 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:46:31,644 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-20 17:46:55,727 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-20 17:47:06,249 | index | page_not_found | 404: Not Found
+INFO | 2016-11-20 17:49:58,664 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:50:02,247 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:52:33,814 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:56:37,045 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 17:59:56,307 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 18:00:00,515 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 18:01:21,660 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 18:02:07,864 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 18:02:11,506 | index | selected_movie | Selected a movie/movies/
+ERROR | 2016-11-20 18:02:11,531 | index | selected_movie | near "%": syntax error
+INFO | 2016-11-20 18:02:37,703 | index | selected_movie | Selected a movie/movies/
+ERROR | 2016-11-20 18:02:37,859 | index | selected_movie | unsupported operand type(s) for %: 'sqlite3.Cursor' and 'str'
+INFO | 2016-11-20 18:02:38,277 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 18:02:40,434 | index | selected_movie | Selected a movie/movies/
+ERROR | 2016-11-20 18:02:40,464 | index | selected_movie | unsupported operand type(s) for %: 'sqlite3.Cursor' and 'str'
+ERROR | 2016-11-20 18:05:42,419 | index | page_not_found | 404: Not Found
+INFO | 2016-11-20 18:05:53,992 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-20 18:07:41,912 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-20 18:09:58,617 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 18:09:58,840 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 18:10:00,634 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-20 18:10:00,717 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-20 18:10:23,329 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 18:10:26,637 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-20 18:10:26,655 | index | selected_movie | near "%": syntax error
+INFO | 2016-11-20 18:12:59,884 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 18:13:44,746 | index | selected_movie | Selected a movie/movies/
+ERROR | 2016-11-20 18:13:44,817 | index | selected_movie | 'ImmutableMultiDict' object has no attribute 'movieid'
+ERROR | 2016-11-20 18:18:50,816 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-20 18:19:01,280 | index | page_not_found | 404: Not Found
+INFO | 2016-11-20 18:19:29,405 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 18:19:30,751 | index | selected_movie | Selected a movie/movies/
+ERROR | 2016-11-20 18:19:30,769 | index | selected_movie | 'ImmutableMultiDict' object has no attribute 'movieid'
+INFO | 2016-11-20 18:20:23,400 | index | selected_movie | Selected a movie/movies/
+ERROR | 2016-11-20 18:20:23,451 | index | selected_movie | 'ImmutableMultiDict' object has no attribute 'movieid'
+INFO | 2016-11-20 18:20:33,490 | index | selected_movie | Selected a movie/movies/
+ERROR | 2016-11-20 18:20:33,508 | index | selected_movie | 'ImmutableMultiDict' object has no attribute 'movieid'
+INFO | 2016-11-20 18:21:02,492 | index | selected_movie | Selected a movie/movies/
+ERROR | 2016-11-20 18:21:02,557 | index | selected_movie | 'ImmutableMultiDict' object has no attribute 'movieid'
+INFO | 2016-11-20 18:22:15,567 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-20 18:22:15,588 | index | selected_movie | 'ImmutableMultiDict' object has no attribute 'movieid'
+INFO | 2016-11-20 18:22:44,055 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-20 18:23:39,249 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-20 18:23:56,992 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-20 18:24:45,105 | index | page_not_found | 404: Not Found
+INFO | 2016-11-20 18:26:45,819 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-20 19:00:16,008 | index | actors | Select Actor Page/actors
+ERROR | 2016-11-20 19:00:16,052 | index | actors | near ")": syntax error
+INFO | 2016-11-20 19:01:22,581 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:01:42,695 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:03:53,629 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:04:24,296 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:05:09,690 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:05:48,271 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:07:59,502 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:08:20,348 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:12:22,526 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:12:25,921 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 19:13:10,615 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 19:13:13,163 | index | root | Index - /
+INFO | 2016-11-20 19:13:15,356 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 19:13:17,097 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:13:19,800 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 19:14:03,586 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 19:14:08,610 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:19:11,881 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 19:19:12,679 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:19:13,851 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 19:19:21,085 | index | root | Index - /
+INFO | 2016-11-20 19:28:51,353 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 19:29:29,687 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 19:32:30,146 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 19:32:35,606 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 19:32:37,920 | index | root | Index - /
+INFO | 2016-11-20 19:43:56,633 | index | root | Index - /
+INFO | 2016-11-20 19:44:31,264 | index | root | Index - /
+INFO | 2016-11-20 19:47:08,657 | index | root | Index - /
+INFO | 2016-11-20 19:47:24,421 | index | root | Index - /
+INFO | 2016-11-20 19:48:24,328 | index | root | Index - /
+INFO | 2016-11-20 19:49:36,454 | index | root | Index - /
+INFO | 2016-11-20 19:50:19,240 | index | root | Index - /
+INFO | 2016-11-20 19:50:54,389 | index | root | Index - /
+INFO | 2016-11-20 19:53:57,118 | index | root | Index - /
+INFO | 2016-11-20 19:54:41,821 | index | root | Index - /
+INFO | 2016-11-20 20:01:02,887 | index | root | Index - /
+INFO | 2016-11-20 20:01:41,339 | index | root | Index - /
+INFO | 2016-11-20 20:02:50,615 | index | root | Index - /
+INFO | 2016-11-20 20:04:20,077 | index | root | Index - /
+INFO | 2016-11-20 20:04:53,617 | index | root | Index - /
+INFO | 2016-11-20 20:05:49,513 | index | root | Index - /
+INFO | 2016-11-20 20:06:34,522 | index | root | Index - /
+INFO | 2016-11-20 20:07:22,857 | index | root | Index - /
+INFO | 2016-11-20 20:07:37,703 | index | root | Index - /
+INFO | 2016-11-20 20:11:32,029 | index | root | Index - /
+INFO | 2016-11-20 20:12:32,908 | index | root | Index - /
+INFO | 2016-11-20 20:19:19,726 | index | root | Index - /
+ERROR | 2016-11-20 20:19:19,865 | index | root | no such function: NEWID
+INFO | 2016-11-20 20:20:02,782 | index | root | Index - /
+ERROR | 2016-11-20 20:20:02,873 | index | root | misuse of aggregate: MAX()
+INFO | 2016-11-20 20:21:27,176 | index | root | Index - /
+ERROR | 2016-11-20 20:21:27,285 | index | root | no such function: TOP
+INFO | 2016-11-20 20:22:03,277 | index | root | Index - /
+ERROR | 2016-11-20 20:22:03,383 | index | root | near "1": syntax error
+INFO | 2016-11-20 20:23:30,191 | index | root | Index - /
+INFO | 2016-11-20 20:24:54,599 | index | root | Index - /
+ERROR | 2016-11-20 20:24:54,809 | index | root | 'movie' is undefined
+INFO | 2016-11-20 20:26:14,471 | index | root | Index - /
+ERROR | 2016-11-20 20:26:14,619 | index | root | 'function' object is not iterable
+INFO | 2016-11-20 20:30:41,713 | index | root | Index - /
+ERROR | 2016-11-20 20:30:41,787 | index | root | expected token 'in', got 'end of statement block'
+INFO | 2016-11-20 20:31:45,986 | index | root | Index - /
+ERROR | 2016-11-20 20:31:46,884 | index | root | 'function' object is not iterable
+INFO | 2016-11-20 20:32:27,508 | index | root | Index - /
+ERROR | 2016-11-20 20:32:28,197 | index | root | 'function' object is not iterable
+INFO | 2016-11-20 20:34:48,322 | index | root | Index - /
+ERROR | 2016-11-20 20:34:49,178 | index | root | 'function' object is not iterable
+INFO | 2016-11-20 20:37:24,468 | index | root | Index - /
+INFO | 2016-11-20 20:38:48,247 | index | root | Index - /
+INFO | 2016-11-20 20:38:49,724 | index | root | Index - /
+ERROR | 2016-11-20 20:38:50,126 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-20 20:38:50,293 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-20 20:38:50,358 | index | page_not_found | 404: Not Found
+INFO | 2016-11-20 20:39:31,464 | index | root | Index - /
+INFO | 2016-11-20 20:39:54,245 | index | root | Index - /
+INFO | 2016-11-20 20:41:40,351 | index | root | Index - /
+INFO | 2016-11-20 20:41:59,463 | index | root | Index - /
+INFO | 2016-11-20 20:43:48,993 | index | root | Index - /
+INFO | 2016-11-20 20:44:06,416 | index | root | Index - /
+INFO | 2016-11-20 20:44:28,624 | index | root | Index - /
+INFO | 2016-11-20 20:45:16,437 | index | root | Index - /
+INFO | 2016-11-20 20:45:36,269 | index | root | Index - /
+INFO | 2016-11-20 20:49:20,006 | index | root | Index - /
+INFO | 2016-11-20 20:50:03,271 | index | root | Index - /
+INFO | 2016-11-20 20:50:34,497 | index | root | Index - /
+INFO | 2016-11-20 20:51:35,914 | index | root | Index - /
+INFO | 2016-11-20 20:53:20,480 | index | root | Index - /
+INFO | 2016-11-20 20:54:06,515 | index | root | Index - /
+INFO | 2016-11-20 20:54:48,322 | index | root | Index - /
+INFO | 2016-11-20 20:55:29,516 | index | root | Index - /
+INFO | 2016-11-20 20:55:49,535 | index | root | Index - /
+INFO | 2016-11-20 20:56:31,799 | index | root | Index - /
+INFO | 2016-11-20 20:59:36,083 | index | root | Index - /
+INFO | 2016-11-20 21:00:09,966 | index | root | Index - /
+INFO | 2016-11-20 21:00:54,724 | index | root | Index - /
+INFO | 2016-11-20 21:01:19,373 | index | root | Index - /
+INFO | 2016-11-20 21:01:39,635 | index | root | Index - /
+INFO | 2016-11-20 21:01:53,280 | index | root | Index - /
+INFO | 2016-11-20 21:02:54,324 | index | root | Index - /
+INFO | 2016-11-20 21:03:09,306 | index | root | Index - /
+INFO | 2016-11-20 21:03:27,137 | index | root | Index - /
+INFO | 2016-11-20 21:03:37,546 | index | root | Index - /
+INFO | 2016-11-20 21:04:13,480 | index | root | Index - /
+INFO | 2016-11-20 21:04:43,495 | index | root | Index - /
+INFO | 2016-11-20 21:05:02,771 | index | root | Index - /
+INFO | 2016-11-20 21:05:28,519 | index | root | Index - /
+INFO | 2016-11-20 21:05:52,620 | index | root | Index - /
+INFO | 2016-11-20 21:06:38,822 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 21:06:43,476 | index | actors | Select Actor Page/actors
+INFO | 2016-11-20 21:06:48,475 | index | movies | Select Movies Page/movies
+INFO | 2016-11-20 21:06:50,696 | index | root | Index - /

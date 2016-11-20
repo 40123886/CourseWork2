@@ -1,3 +1,22 @@
 body{
   padding-top:70px;
 }
+.movie_of_week{
+  float:left;
+  position:absolute;
+}
+.reviews, .news{
+  float:right;
+  padding:10px;
+  clear:both;
+  position:relative;
+  top:100px;
+}
+img{
+  float:left;
+  padding:10px;
+}
+.movie_info{
+  float:left;
+}
+
