@@ -8,7 +8,8 @@
       <tr>
         <td><img src="{{ actor.picture }}" height="200px"></td>
         <td>{{ actor.birth_name+" ("+actor.first_name+ " "  +actor.last_name+")" }}</td>
-        <td><button class="btn btn-default">View</button><td>
+        <td><a class="btn btn-default" href="{{
+        url_for('selected_actor')+"?actorid="+actor.id|string }}">View</a><td>
       </tr>
     {% endfor %}
     </table>

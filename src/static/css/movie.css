@@ -14,9 +14,26 @@ body{
 }
 img{
   float:left;
-  padding:10px;
+  padding:20px;
 }
 .movie_info{
   float:left;
 }
-
+.runtime, .release, .revenue, .genre, .dob, .dod{
+  float:left;
+  padding:10px;
+  margin:0;
+}
+.meta{
+  float:right;
+  clear:both;
+}
+.movie_main{
+  padding:20px;
+  padding-top:40px;
+  position:relative;
+  top:30px;
+}
+.cast{
+  padding:20px;
+}

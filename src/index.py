@@ -74,12 +74,35 @@ def selected_movie():
   try:
     movieid = request.args.get('movieid', '')
     db = get_db()
-    cursor = db.execute('''SELECT title, tagline, overview, runtime,
-    release_date, revenue, poster, genre FROM movie m INNER JOIN movie_genre_key mgk ON mgk.movie_id=m.id
-    INNER JOIN genre g ON g.id=mgk.genre_id WHERE m.id = ? ''', [movieid])
-    movie = [dict(title=row[0], tagline=row[1], overview=row[3]) for row in
-    cursor.fetchall()]
-    return render_template('selected_movie.html', movie=movie, movieid=movieid)
+    cursor_movie = db.execute('''SELECT title, tagline, overview, runtime,
+      release_date, revenue, poster FROM movie m WHERE m.id = ? ''', [movieid])
+    movie = [dict(title=row[0], tagline=row[1], overview=row[2],
+      runtime=row[3], release=row[4], revenue=row[5], poster=row[6]) for row in
+      cursor_movie.fetchall()]
+    cursor_genre = db.execute('''SELECT genre FROM genre g INNER JOIN
+      movie_genre_key gk ON g.id=gk.genre_id WHERE gk.movie_id = ?''', [movieid])
+    genres = [dict(genre=row[0]) for row in cursor_genre.fetchall()]
+    cursor_cast = db.execute('''SELECT a.id, first_name, last_name, birth_name FROM
+      actor a INNER JOIN movie_actor_key ak ON a.id=ak.actor_id WHERE
+      ak.movie_id = ? ''', [movieid])
+    actors = [dict(id=row[0], fname=row[1], lname=row[2], bname=row[3]) for row in
+      cursor_cast.fetchall()]
+    return render_template('selected_movie.html', movie=movie, genre=genres, actor=actors, movieid=movieid)
+  except Exception, e:
+    app.logger.error(e)
+
+@app.route('/actors/selected')
+def selected_actor():
+  this_route = url_for('selected_actor')
+  app.logger.info("Selected Actor Page" + this_route)
+  try:
+    actorid = request.args.get('actorid', '')
+    db = get_db()
+    cursor = db.execute('''SELECT first_name, last_name, birth_name, biography,
+      date_of_birth, date_of_death, picture FROM actor WHERE id = ? ''', [actorid])
+    actors = [dict(first_name=row[0], last_name=row[1], birth_name=row[2],
+      biog=row[3], dob=row[4], dod=row[5], picture=row[6]) for row in cursor.fetchall()]
+    return render_template('selected_actor.html', actors = actors, actorid=actorid)
   except Exception, e:
     app.logger.error(e)
 

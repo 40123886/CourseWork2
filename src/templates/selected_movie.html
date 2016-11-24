@@ -3,6 +3,27 @@
 <div class="container">
 {% for movie in movie %}
   <h1 class="page-header">{{ movie.title }}</h1>
+  <div class="meta">
+    <p class="genre">Genre; {% for genre in genre %} {{ genre.genre }}{% endfor %}</p> 
+    <p class="runtime">Runtime; {{ movie.runtime }}</p>
+    <p class="release">Release Date; {{ movie.release }}</p>
+    <p class="revenue">Revenue; &#36;{{ movie.revenue }}</p>
+  </div>
+  <div class="movie_main">
+    <img src="{{ movie.poster }}" height="500px"/>
+    <h3 class="tagline"><em>{{ movie.tagline }}</em></h3>
+    <p class="overview">{{ movie.overview }}</p>
+  </div>
+  <div class="cast">
+    <h3>Cast</h3>
+      <div class="list-group col-md-8">
+      {% for actor in actor %}
+        <a href="{{ url_for('selected_actor')+"?actorid="+actor.id|string }}" class=list-group-item>
+          {{ actor.bname+" ("+actor.fname+" "+actor.lname+")" }}
+        </a>
+      {% endfor %}
+      </div>
+    </div>
 {% endfor %}
 </div>
 {% endblock %}

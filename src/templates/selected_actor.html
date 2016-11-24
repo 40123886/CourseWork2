@@ -1,0 +1,25 @@
+{% extends "baseTemplate.html" %}
+{% block content %}
+<div class="container">
+{% for actor in actors %}
+  <h1 class="page-header">{{ actor.birth_name+" ("+actor.first_name+"
+  "+actor.last_name+")" }}</h1>
+  <div class="meta">
+    <p class="dob">Date of Birth; {{ actor.dob }}</p> 
+    <p class="dod">Date of death; {{ actor.dod }}</p>
+  </div>
+  <div class="movie_main">
+    <img src="{{ actor.picture }}" height="500px"/>
+    <p class="overview">{{ actor.biog }}</p>
+  </div>
+  <div class="films">
+    <h3>Filmogrphy</h3>
+      <div class="list-group col-md-8">
+        <a class="list-group-item">
+          Film Name  
+        </a>
+      </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}
