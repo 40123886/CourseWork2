@@ -5,6 +5,7 @@ import sqlite3
 from logging.handlers import RotatingFileHandler
 from flask import Flask, render_template, url_for, g, request, redirect
 from forms import add
+from werkzeug import secure_filename
 
 app = Flask(__name__)
 app.secret_key = 'this_is_the_secret_key'
@@ -84,7 +85,8 @@ def selected_movie():
       runtime=row[3], release=row[4], revenue=row[5], poster=row[6]) for row in
       cursor_movie.fetchall()]
     cursor_genre = db.execute('''SELECT genre FROM genre g INNER JOIN
-      movie_genre_key gk ON g.id=gk.genre_id WHERE gk.movie_id = ?''', [movieid])
+      movie_genre_key gk ON g.id=gk.genre_id WHERE gk.movie_id = ? AND g.id <>
+      19''', [movieid])
     genres = [dict(genre=row[0]) for row in cursor_genre.fetchall()]
     cursor_cast = db.execute('''SELECT a.id, first_name, last_name, birth_name FROM
       actor a INNER JOIN movie_actor_key ak ON a.id=ak.actor_id WHERE
@@ -117,10 +119,46 @@ def selected_actor():
 
 @app.route('/add_movie', methods=['GET', 'POST'])
 def add_movie():
-  this_route = url_for('add_movie') 
+  this_route = url_for('add_movie')
+  app.logger.info("Adding a Film" + this_route)
   try:
     form = add()
-    return render_template('add_movie.html', form=form)
+    db = get_db()
+    getmovieid = db.execute('''SELECT MAX(id)+1 FROM movie''')
+    movieid = [dict(id=row[0]) for row in getmovieid.fetchall()]
+    getgenres = db.execute('''SELECT id, genre FROM genre ORDER BY id DESC''')
+    genres = [dict(id=row[0], genre=row[1]) for row in getgenres.fetchall()]
+    if request.method == 'POST':
+      id = request.form.get('movieid')
+      title = request.form.get('title')
+      tagline = request.form.get('tagline')
+      overview = request.form.get('overview')
+      runtime = request.form.get('runtime')
+      release = request.form.get('release')
+      revenue = request.form.get('revenue')
+      poster = 'null'
+      genre = request.form.get('genre')
+      genre2 = request.form.get('genre2')
+      genre3 = request.form.get('genre3')
+      db.execute('''INSERT INTO movie VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+      ''', (id, title, tagline, overview, runtime, release,
+      revenue, poster))
+      db.execute('''INSERT INTO movie_genre_key VALUES (?, ?), (?, ?), (?,
+      ?)''', (id, genre, id, genre2, id, genre3))
+      db.commit()
+      return redirect(url_for('add_actor'))
+    else:
+      return render_template('add_movie.html', form=form, movieid=movieid,
+      genres=genres)
+  except Exception, e:
+    app.logger.error(e)
+
+@app.route('/add_actor', methods=['GET', 'POST'])
+def add_actor():
+  this_route = url_for('add_actor')
+  app.logger.info("Adding actor" + this_route)
+  try:
+    return redirect(url_for('/'))
   except Exception, e:
     app.logger.error(e)
 

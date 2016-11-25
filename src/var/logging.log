@@ -4009,3 +4009,237 @@ ERROR | 2016-11-25 11:46:09,468 | index | add_movie | 'None' has no attribute 'm
 ERROR | 2016-11-25 11:51:51,107 | index | add_movie | Must provide secret_key to use csrf.
 ERROR | 2016-11-25 12:00:46,988 | index | add_movie | expected token ',', got 'Id'
 ERROR | 2016-11-25 12:02:19,868 | index | add_movie | expected token ',', got 'id'
+ERROR | 2016-11-25 13:36:47,869 | index | add_movie | expected token ',', got 'poster'
+INFO | 2016-11-25 13:50:42,357 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 13:50:42,483 | index | add_movie | 400: Bad Request
+INFO | 2016-11-25 13:51:38,953 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 13:51:39,087 | index | add_movie | 400: Bad Request
+INFO | 2016-11-25 14:01:37,006 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:01:37,175 | index | add_movie | 400: Bad Request
+INFO | 2016-11-25 14:01:41,246 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:01:41,287 | index | add_movie | 400: Bad Request
+INFO | 2016-11-25 14:02:19,330 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:02:19,375 | index | add_movie | 400: Bad Request
+INFO | 2016-11-25 14:03:48,170 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:06:26,581 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:06:54,956 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:06:55,047 | index | add_movie | expected token ':', got '}'
+INFO | 2016-11-25 14:10:15,899 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:10:53,947 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:11:55,338 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:11:55,422 | index | add_movie | expected token ',', got '{'
+INFO | 2016-11-25 14:12:35,875 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:14:09,426 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:14:52,923 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:15:51,207 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:16:27,787 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:17:01,749 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:18:07,674 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:18:32,439 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:27:45,520 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:30:53,574 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:30:53,690 | index | add_movie | __init__() takes at most 2 arguments (3 given)
+INFO | 2016-11-25 14:33:03,405 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:33:03,693 | index | add_movie | __init__() takes at most 2 arguments (3 given)
+INFO | 2016-11-25 14:39:57,490 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:39:57,573 | index | add_movie | __init__() takes at most 2 arguments (3 given)
+INFO | 2016-11-25 14:41:55,060 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:41:55,139 | index | add_movie | __init__() takes at most 2 arguments (3 given)
+INFO | 2016-11-25 14:43:44,912 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:43:44,998 | index | add_movie | __init__() takes at most 2 arguments (3 given)
+INFO | 2016-11-25 14:51:56,479 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:51:56,658 | index | add_movie | __init__() takes at most 2 arguments (3 given)
+INFO | 2016-11-25 14:53:51,077 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 14:54:01,817 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 14:54:01,900 | index | add_movie | __init__() takes at most 2 arguments (3 given)
+INFO | 2016-11-25 15:03:10,732 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 15:03:19,465 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:03:19,535 | index | add_movie | global name 'data' is not defined
+INFO | 2016-11-25 15:05:56,665 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:05:56,765 | index | add_movie | function takes at most 2 arguments (8 given)
+INFO | 2016-11-25 15:07:58,808 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:07:58,899 | index | add_movie | function takes at most 2 arguments (8 given)
+INFO | 2016-11-25 15:07:59,099 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:07:59,145 | index | add_movie | function takes at most 2 arguments (8 given)
+INFO | 2016-11-25 15:10:36,146 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:10:36,235 | index | add_movie | 'instancemethod' object has no attribute '__getitem__'
+INFO | 2016-11-25 15:12:07,783 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:12:07,876 | index | add_movie | function takes at most 2 arguments (8 given)
+INFO | 2016-11-25 15:12:28,236 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 15:12:41,668 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:12:41,715 | index | add_movie | function takes at most 2 arguments (8 given)
+INFO | 2016-11-25 15:27:11,143 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:27:11,240 | index | add_movie | table movie has 8 columns but 7 values were supplied
+INFO | 2016-11-25 15:28:00,738 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:28:00,833 | index | add_movie | global name 'null' is not defined
+INFO | 2016-11-25 15:28:28,123 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:28:28,252 | index | add_movie | global name 'poster' is not defined
+INFO | 2016-11-25 15:29:05,888 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:29:05,993 | index | add_movie | table movie has 8 columns but 7 values were supplied
+INFO | 2016-11-25 15:29:39,242 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:29:39,537 | index | add_movie | table movie has 8 columns but 7 values were supplied
+INFO | 2016-11-25 15:30:09,780 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:30:10,052 | index | add_movie | Error binding parameter 0 - probably unsupported type.
+INFO | 2016-11-25 15:31:06,988 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 15:31:07,276 | index | add_movie | Error binding parameter 0 - probably unsupported type.
+INFO | 2016-11-25 15:33:25,141 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 15:33:37,993 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 15:33:44,686 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 15:34:11,908 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 15:34:16,051 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-25 15:34:18,945 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-25 15:34:23,679 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-25 15:39:01,043 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 15:39:09,898 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 15:39:10,461 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 15:40:21,762 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 15:40:46,788 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 15:40:47,029 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 15:40:51,305 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 15:40:51,974 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 15:41:32,067 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 15:42:53,949 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 15:59:59,867 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:00:00,434 | index | add_movie | Encountered unknown tag 'end'. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+INFO | 2016-11-25 16:00:44,497 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:01:26,002 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:12:11,742 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:13:42,068 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:14:04,917 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:14:51,908 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:16:17,242 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:18:31,148 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:18:34,883 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:19:08,966 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:19:40,396 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:20:00,605 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:21:44,798 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:31:56,798 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:31:57,179 | index | add_movie | /movies
+INFO | 2016-11-25 16:33:18,986 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 16:33:19,529 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:33:20,731 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 16:33:21,692 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:35:39,690 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:35:51,198 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:35:51,261 | index | add_movie | global name 'genre2' is not defined
+INFO | 2016-11-25 16:37:15,777 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 16:37:16,086 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:37:23,025 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 16:37:23,179 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:37:25,104 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 16:37:25,263 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:37:26,519 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 16:37:26,885 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:38:47,312 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:38:47,427 | index | add_movie | global name 'genre2' is not defined
+INFO | 2016-11-25 16:40:09,258 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:40:09,395 | index | add_movie | global name 'genre2' is not defined
+INFO | 2016-11-25 16:41:13,444 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:41:13,786 | index | add_movie | global name 'genre2' is not defined
+INFO | 2016-11-25 16:41:49,472 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:41:49,876 | index | add_movie | /movies
+INFO | 2016-11-25 16:42:41,234 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:42:41,500 | index | add_movie | UNIQUE constraint failed: movie.id
+INFO | 2016-11-25 16:42:49,517 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:43:00,178 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:43:00,358 | index | add_movie | /movies
+INFO | 2016-11-25 16:43:15,599 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 16:43:15,885 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:43:18,818 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 16:43:19,162 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:43:21,652 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 16:43:21,785 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:43:23,362 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 16:43:23,480 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:45:10,309 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 16:48:10,721 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:49:43,184 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:49:52,157 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:50:26,051 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:50:39,638 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:50:44,825 | index | add_movie | database is locked
+INFO | 2016-11-25 16:51:09,598 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:51:14,807 | index | add_movie | database is locked
+INFO | 2016-11-25 16:52:22,879 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:52:32,303 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:52:32,466 | index | add_movie | /movies
+INFO | 2016-11-25 16:53:17,311 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 16:53:18,079 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:53:19,774 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 16:53:20,268 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:57:30,491 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 16:57:43,336 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 16:57:43,457 | index | add_movie | ./movies
+INFO | 2016-11-25 16:58:23,095 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 16:58:23,870 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 16:58:24,058 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 16:58:26,498 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 16:58:26,958 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:00:05,764 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 17:00:33,091 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-25 17:00:36,660 | index | selected_actor | Selected Actor Page/actors/selected
+INFO | 2016-11-25 17:00:39,407 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-25 17:00:48,651 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:00:49,181 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:03:58,928 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 17:03:59,145 | index | add_movie | /movies.html
+INFO | 2016-11-25 17:04:35,108 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 17:04:35,609 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:04:37,283 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 17:04:37,953 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:05:15,982 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 17:09:06,893 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:09:07,463 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:09:14,929 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:09:35,220 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 17:09:35,931 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 17:09:36,375 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:09:38,799 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 17:09:39,508 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:10:42,739 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:10:52,368 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:10:54,227 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 17:10:54,456 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:10:55,907 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 17:10:56,642 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:14:58,571 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:14:59,823 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:15:02,724 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:15:15,075 | index | add_movie | Adding a Film/add_movie
+ERROR | 2016-11-25 17:15:15,139 | index | add_movie | function takes at most 2 arguments (4 given)
+INFO | 2016-11-25 17:18:10,606 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:18:20,903 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:18:25,278 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 17:18:25,859 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:18:27,411 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 17:18:28,042 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:19:07,981 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 17:23:21,030 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:23:21,441 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:23:30,601 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:23:32,953 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 17:23:33,212 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:23:34,565 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 17:23:34,848 | index | selected_movie | no test named 'None'
+INFO | 2016-11-25 17:25:56,821 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 17:25:57,550 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 17:25:57,579 | index | selected_movie | no such column: NONE
+INFO | 2016-11-25 17:25:57,775 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 17:25:57,798 | index | selected_movie | no such column: NONE
+INFO | 2016-11-25 17:27:25,086 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 17:27:26,726 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 17:27:27,110 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:28:08,114 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 17:41:43,377 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:41:47,997 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:43:15,329 | index | add_movie | Adding a Film/add_movie
+INFO | 2016-11-25 17:43:15,853 | index | add_actor | Adding actor/add_actor
+INFO | 2016-11-25 17:43:23,557 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 17:43:23,767 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:43:24,342 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-25 17:43:24,520 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:45:26,510 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-25 17:45:27,338 | index | selected_movie | Selected a movie/movies/selected
+ERROR | 2016-11-25 17:45:27,771 | index | page_not_found | 404: Not Found
+INFO | 2016-11-25 17:46:00,280 | index | movies | Select Movies Page/movies
