@@ -6,7 +6,7 @@
     {% for movie in movies %}
     <img src="{{ movie.poster }}" height="300px">
     <div class"movie_info">
-      <h3>{{ movie.title }}</h3>
+      <h3><a href="{{ url_for('selected_movie')+"?movieid="+movie.id|string }}">{{ movie.title }}</a></h3>
       <p><em>{{ movie.tagline }}</em></p>
       <p>{{ movie.overview }}</p>
     </div>

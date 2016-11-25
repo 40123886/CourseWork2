@@ -6,7 +6,9 @@
   "+actor.last_name+")" }}</h1>
   <div class="meta">
     <p class="dob">Date of Birth; {{ actor.dob }}</p> 
+  {% if actor.dod is not none %}
     <p class="dod">Date of death; {{ actor.dod }}</p>
+  {% endif %}
   </div>
   <div class="movie_main">
     <img src="{{ actor.picture }}" height="500px"/>
@@ -15,9 +17,11 @@
   <div class="films">
     <h3>Filmogrphy</h3>
       <div class="list-group col-md-8">
-        <a class="list-group-item">
-          Film Name  
+      {% for movie in movies %}
+        <a href="{{ url_for('selected_movie')+"?movieid="+movie.id|string }}" class="list-group-item">
+          {{ movie.title }}  
         </a>
+      {% endfor %}
       </div>
     </div>
 {% endfor %}

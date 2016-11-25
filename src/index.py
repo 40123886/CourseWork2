@@ -3,10 +3,13 @@ import logging
 import sqlite3
 
 from logging.handlers import RotatingFileHandler
-from flask import Flask, render_template, url_for, g, request
+from flask import Flask, render_template, url_for, g, request, redirect
+from forms import add
 
 app = Flask(__name__)
+app.secret_key = 'this_is_the_secret_key'
 MovieDB = 'var/MovieDB.db'
+
 
 def get_db():
   db = getattr(g, 'db', None)
@@ -34,9 +37,10 @@ def root():
   app.logger.info("Index - " + this_route)
   try:
     db = get_db()
-    cursor = db.execute(''' SELECT poster, title, tagline, overview FROM movie
+    cursor = db.execute(''' SELECT poster, title, tagline, overview, id FROM movie
     ORDER BY id DESC LIMIT 1''')
-    movie = [dict(poster=row[0], title=row[1], tagline=row[2], overview=row[3])
+    movie = [dict(poster=row[0], title=row[1], tagline=row[2], overview=row[3],
+      id=row[4])
     for row in cursor.fetchall()]
     return render_template('index.html', movies = movie)
   except Exception, e:
@@ -98,11 +102,25 @@ def selected_actor():
   try:
     actorid = request.args.get('actorid', '')
     db = get_db()
-    cursor = db.execute('''SELECT first_name, last_name, birth_name, biography,
+    cursor_cast = db.execute('''SELECT first_name, last_name, birth_name, biography,
       date_of_birth, date_of_death, picture FROM actor WHERE id = ? ''', [actorid])
     actors = [dict(first_name=row[0], last_name=row[1], birth_name=row[2],
-      biog=row[3], dob=row[4], dod=row[5], picture=row[6]) for row in cursor.fetchall()]
-    return render_template('selected_actor.html', actors = actors, actorid=actorid)
+      biog=row[3], dob=row[4], dod=row[5], picture=row[6]) for row in
+      cursor_cast.fetchall()]
+    cursor_movies = db.execute('''SELECT m.id, title FROM movie m INNER JOIN
+      movie_actor_key ak ON m.id=ak.movie_id WHERE ak.actor_id = ? ''', [actorid])
+    movies = [dict(id=row[0], title=row[1]) for row in cursor_movies.fetchall()]
+    return render_template('selected_actor.html', actors = actors,
+      movies=movies, actorid=actorid)
+  except Exception, e:
+    app.logger.error(e)
+
+@app.route('/add_movie', methods=['GET', 'POST'])
+def add_movie():
+  this_route = url_for('add_movie') 
+  try:
+    form = add()
+    return render_template('add_movie.html', form=form)
   except Exception, e:
     app.logger.error(e)
 

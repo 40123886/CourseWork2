@@ -1,0 +1,44 @@
+{% extends "baseTemplate.html" %}
+{% block content %}
+<div class="container">
+  <h1 class="page_header">Add a Movie</h1>
+  <form action="" method="post" name="add_movie">
+    <div class="form-group">
+      <label for="movieid">Movie Id</label>
+      <p>{{ form.movieid(class="form-control", id="movieid", placeholder="Movie
+      Id") }}</p>
+    </div>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <p>{{ form.title(class="form-control", id="title",
+      placeholder="Title") }}</p>
+    </div>
+    <div class="form-group">
+      <label for="tagline">Tagline</label>
+      <p>{{ form.tagline(class="form-control", id="tagline",
+      placeholder="Tagline") }}</p>
+    </div>
+    <div class="form-group">
+      <label for="overview">Overview</label>
+      <p>{{ form.overview(class="form-control", id="overview",
+      placeholder="Overview") }}</p>
+    </div>
+    <div class="form-group">
+      <label for="runtime">Runtime</label>
+      <p>{{ form.runtime(class="form-control", id="runtime",
+      placeholder="Runtime") }}</p>
+    </div>
+    <div class="form-group">
+      <label for="release">Release Date</label>
+      <P>{{ form.release(class="form-control", id="release", placeholder="Release
+      Date") }}</P>
+    </div>
+    <div class="form-group">
+      <label for="revenue">Revenue</label>
+      <p>{{ form.revenue(class="form-control", id="revenue",
+      placeholder="Revenue") }}</p>
+    </div>
+    <button class="btn btn-primary" type="submit">Save</button>
+  </form>
+</div>
+{% endblock %}
