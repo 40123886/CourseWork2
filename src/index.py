@@ -3,14 +3,43 @@ import logging
 import sqlite3
 
 from logging.handlers import RotatingFileHandler
-from flask import Flask, render_template, url_for, g, request, redirect
+from flask import Flask, render_template, url_for, g, request, redirect, Response, flash, abort
 from forms import add
 from werkzeug import secure_filename
+from flask_login import LoginManager, UserMixin, login_required
 
 app = Flask(__name__)
 app.secret_key = 'this_is_the_secret_key'
 MovieDB = 'var/MovieDB.db'
+login_manager = LoginManager()
+login_manager.init_app(app)
 
+class User(UserMixin):
+  user_databse = {"JohnDoe": ("JohnDoe", "John"),
+                  "JaneDoe": ("JaneDoe", "Jane")}
+
+def __init__(self, username, password):
+  self.id = username
+  self.password = password
+
+@login_manager.request_loader
+def load_user(request):
+  token = request.headers.get('Authorisation')
+  if token is None:
+    token = request.args.get('token')
+
+  if token is not None:
+    username, password = token.split(":")
+    user_entry = User.get(username)
+    if (user_entry is not None):
+      user = User(user_entry[0], user_entry[1])
+      if (user.password == password):
+        return user
+  return None
+
+@classmethod
+def get(cls, id):
+  return cls.user_database.get(id)
 
 def get_db():
   db = getattr(g, 'db', None)
@@ -117,6 +146,16 @@ def selected_actor():
   except Exception, e:
     app.logger.error(e)
 
+@app.route('/loggedin')
+@login_required
+def loggedin():
+  this_route = url_for('loggedin')
+  app.logger.info("logged in page" + this_route)
+  try:
+    return "If you read this you are logged in"
+  except Exception, e:
+    app.logger.error(e)
+
 @app.route('/add_movie', methods=['GET', 'POST'])
 def add_movie():
   this_route = url_for('add_movie')
@@ -166,6 +205,11 @@ def add_actor():
 def page_not_found(e):
   app.logger.error(e)
   return render_template('404.html'), 404
+
+@app.errorhandler(401)
+def unauthorised(e):
+  app.logger.error(e)
+  return render_template('401.html')
 
 def init(app):
   config = ConfigParser.ConfigParser()

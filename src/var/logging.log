@@ -4243,3 +4243,84 @@ INFO | 2016-11-25 17:45:26,510 | index | selected_movie | Selected a movie/movie
 INFO | 2016-11-25 17:45:27,338 | index | selected_movie | Selected a movie/movies/selected
 ERROR | 2016-11-25 17:45:27,771 | index | page_not_found | 404: Not Found
 INFO | 2016-11-25 17:46:00,280 | index | movies | Select Movies Page/movies
+INFO | 2016-11-25 18:23:05,288 | index | movies | Select Movies Page/movies
+INFO | 2016-11-26 14:53:47,495 | index | root | Index - /
+INFO | 2016-11-26 14:53:48,383 | index | root | Index - /
+INFO | 2016-11-26 14:55:50,150 | index | movies | Select Movies Page/movies
+INFO | 2016-11-26 14:55:52,318 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-26 14:55:53,789 | index | selected_actor | Selected Actor Page/actors/selected
+INFO | 2016-11-26 14:55:55,427 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-26 14:55:56,962 | index | selected_actor | Selected Actor Page/actors/selected
+INFO | 2016-11-26 14:55:57,960 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-26 14:55:59,420 | index | selected_actor | Selected Actor Page/actors/selected
+ERROR | 2016-11-26 16:30:20,443 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-26 16:30:25,047 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-26 16:33:51,584 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-26 16:34:12,335 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-26 16:34:27,523 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-26 16:37:09,475 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-26 16:37:40,779 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-26 16:39:13,333 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-26 16:39:19,042 | index | unauthorised | 401: Unauthorized
+INFO | 2016-11-26 16:39:21,899 | index | movies | Select Movies Page/movies
+INFO | 2016-11-26 16:39:23,881 | index | movies | Select Movies Page/movies
+INFO | 2016-11-26 16:39:24,587 | index | actors | Select Actor Page/actors
+INFO | 2016-11-26 16:39:26,037 | index | root | Index - /
+INFO | 2016-11-26 16:40:23,351 | index | root | Index - /
+INFO | 2016-11-26 16:40:26,452 | index | root | Index - /
+INFO | 2016-11-26 16:40:28,248 | index | root | Index - /
+INFO | 2016-11-26 16:40:37,622 | index | root | Index - /
+INFO | 2016-11-26 16:41:24,962 | index | root | Index - /
+ERROR | 2016-11-26 16:45:07,838 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-26 16:45:20,751 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-26 16:47:35,875 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-26 16:47:38,865 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-26 16:47:53,107 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-26 16:48:31,173 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-26 16:48:56,542 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-26 16:49:00,588 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-26 16:50:11,749 | index | unauthorised | 401: Unauthorized
+INFO | 2016-11-27 10:55:13,078 | index | root | Index - /
+ERROR | 2016-11-27 10:55:15,685 | index | page_not_found | 404: Not Found
+INFO | 2016-11-27 10:55:21,297 | index | movies | Select Movies Page/movies
+INFO | 2016-11-27 10:55:23,348 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-27 10:55:25,566 | index | selected_actor | Selected Actor Page/actors/selected
+ERROR | 2016-11-27 11:16:18,682 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 11:16:29,315 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 11:19:35,465 | index | get_user | no such table: users
+ERROR | 2016-11-27 11:19:35,599 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 11:20:20,239 | index | get_user | no such table: users
+ERROR | 2016-11-27 11:20:20,449 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 11:39:34,748 | index | login | Incorrect number of bindings supplied. The current statement uses 1, and there are 21 supplied.
+ERROR | 2016-11-27 11:41:05,439 | index | login | Incorrect number of bindings supplied. The current statement uses 1, and there are 21 supplied.
+ERROR | 2016-11-27 11:41:53,778 | index | login | 401: Unauthorized
+ERROR | 2016-11-27 11:42:11,563 | index | login | 401: Unauthorized
+ERROR | 2016-11-27 11:46:14,209 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 11:48:33,144 | index | login | 401: Unauthorized
+ERROR | 2016-11-27 11:48:47,102 | index | login | 401: Unauthorized
+ERROR | 2016-11-27 11:50:33,203 | index | login | 401: Unauthorized
+ERROR | 2016-11-27 11:50:46,198 | index | login | 401: Unauthorized
+ERROR | 2016-11-27 11:51:37,125 | index | login | 401: Unauthorized
+ERROR | 2016-11-27 11:59:37,835 | index | login | no such table: users
+INFO | 2016-11-27 12:07:34,022 | index | movies | Select Movies Page/movies
+INFO | 2016-11-27 12:08:27,233 | index | actors | Select Actor Page/actors
+INFO | 2016-11-27 12:08:44,216 | index | actors | Select Actor Page/actors
+INFO | 2016-11-27 12:08:54,475 | index | actors | Select Actor Page/actors
+INFO | 2016-11-27 12:58:06,486 | index | root | Index - /
+INFO | 2016-11-27 12:58:09,134 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-27 12:58:10,460 | index | actors | Select Actor Page/actors
+INFO | 2016-11-27 12:58:11,249 | index | movies | Select Movies Page/movies
+ERROR | 2016-11-27 12:58:18,348 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-27 12:58:24,425 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 12:58:31,924 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-27 12:58:32,166 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-27 12:59:09,435 | index | page_not_found | 404: Not Found
+ERROR | 2016-11-27 13:00:00,521 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 13:00:40,176 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 13:00:59,123 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 13:01:05,178 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 13:01:34,617 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 13:01:39,589 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 13:02:32,052 | index | unauthorised | 401: Unauthorized
+ERROR | 2016-11-27 13:02:36,772 | index | page_not_found | 404: Not Found
+INFO | 2016-11-27 13:02:39,403 | index | root | Index - /
