@@ -4501,3 +4501,10 @@ INFO | 2016-11-30 20:14:08,921 | index | movies | Select Movies Page/movies
 INFO | 2016-11-30 20:47:54,643 | index | selected_movie | Selected a movie/movies/selected
 INFO | 2016-11-30 20:48:19,982 | index | selected_actor | Selected Actor Page/actors/selected
 INFO | 2016-11-30 21:22:03,286 | index | root | Index - /
+INFO | 2016-11-30 22:24:07,192 | index | root | Index - /
+INFO | 2016-11-30 22:24:11,601 | index | movies | Select Movies Page/movies
+INFO | 2016-11-30 22:24:13,140 | index | selected_movie | Selected a movie/movies/selected
+INFO | 2016-11-30 22:24:14,904 | index | selected_actor | Selected Actor Page/actors/selected
+INFO | 2016-11-30 22:24:16,506 | index | actors | Select Actor Page/actors
+INFO | 2016-11-30 22:24:19,082 | index | selected_actor | Selected Actor Page/actors/selected
+INFO | 2016-11-30 22:24:23,879 | index | selected_movie | Selected a movie/movies/selected

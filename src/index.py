@@ -15,6 +15,7 @@ MovieDB = 'var/MovieDB.db'
 login_manager = LoginManager()
 login_manager.init_app(app)
 
+#Started implementing loggin in and out
 class User(UserMixin):
   user_databse = {"JohnDoe": ("JohnDoe", "John"),
                   "JaneDoe": ("JaneDoe", "Jane")}
@@ -42,6 +43,7 @@ def load_user(request):
 def get(cls, id):
   return cls.user_database.get(id)
 
+#This section configures database setting to use throughout the app
 def get_db():
   db = getattr(g, 'db', None)
   if  db is None:
@@ -62,6 +64,7 @@ def init_db():
             db.cursor().executescript(f.read())
         db.commit()
 
+#Home page
 @app.route('/')
 def root():
   this_route = url_for('.root')
@@ -77,24 +80,28 @@ def root():
   except Exception, e:
     app.logger.error(e)
 
+#Select movie page
 @app.route('/movies')
 def movies():
   this_route = url_for('movies')
   app.logger.info("Select Movies Page" + this_route)
   try:
     db = get_db()
+#Select all the movie in the database
     cursor = db.execute('''SELECT rowid, title, poster FROM movie ''')
     movies = [dict(id=row[0], title=row[1], poster=row[2]) for row in cursor.fetchall()]
     return render_template('movie.html', movies = movies)
   except Exception, e:
     app.logger.error(e)
 
+#Select actor page
 @app.route('/actors')
 def actors():
   this_route = url_for('actors')
   app.logger.info("Select Actor Page" + this_route)
   try:
     db = get_db()
+#Select all the actors from the database
     cursor = db.execute('''SELECT rowid, first_name, last_name, birth_name, picture FROM actor ''')
     actors = [dict(id=row[0], first_name=row[1], last_name=row[2],
     birth_name=row[3], picture=row[4]) for row in cursor.fetchall()]
@@ -102,6 +109,7 @@ def actors():
   except Exception, e:
     app.logger.error(e)
 
+#Selected movie and actor pages
 @app.route('/movies/selected')
 def selected_movie():
   this_route = url_for('selected_movie')
@@ -109,15 +117,18 @@ def selected_movie():
   try:
     movieid = request.args.get('movieid', '')
     db = get_db()
+#Select movies with the id of the selected movie
     cursor_movie = db.execute('''SELECT title, tagline, overview, runtime,
       release_date, revenue, poster FROM movie m WHERE m.id = ? ''', [movieid])
     movie = [dict(title=row[0], tagline=row[1], overview=row[2],
       runtime=row[3], release=row[4], revenue=row[5], poster=row[6]) for row in
       cursor_movie.fetchall()]
+#Selected the genres of the movie with the selected id
     cursor_genre = db.execute('''SELECT genre FROM genre g INNER JOIN
       movie_genre_key gk ON g.id=gk.genre_id WHERE gk.movie_id = ? AND g.id <>
       19''', [movieid])
     genres = [dict(genre=row[0]) for row in cursor_genre.fetchall()]
+#Selected all the actors with the selected movie id
     cursor_cast = db.execute('''SELECT a.id, first_name, last_name, birth_name FROM
       actor a INNER JOIN movie_actor_key ak ON a.id=ak.actor_id WHERE
       ak.movie_id = ? ''', [movieid])
@@ -134,11 +145,13 @@ def selected_actor():
   try:
     actorid = request.args.get('actorid', '')
     db = get_db()
+#Select the actor with the selected id
     cursor_cast = db.execute('''SELECT first_name, last_name, birth_name, biography,
       date_of_birth, date_of_death, picture FROM actor WHERE id = ? ''', [actorid])
     actors = [dict(first_name=row[0], last_name=row[1], birth_name=row[2],
       biog=row[3], dob=row[4], dod=row[5], picture=row[6]) for row in
       cursor_cast.fetchall()]
+#Selected the movies with the selected actor id
     cursor_movies = db.execute('''SELECT m.id, title FROM movie m INNER JOIN
       movie_actor_key ak ON m.id=ak.movie_id WHERE ak.actor_id = ? ''', [actorid])
     movies = [dict(id=row[0], title=row[1]) for row in cursor_movies.fetchall()]
@@ -147,6 +160,7 @@ def selected_actor():
   except Exception, e:
     app.logger.error(e)
 
+#This page is restriced and will be shown when the logging in is implemented
 @app.route('/loggedin')
 @login_required
 def loggedin():
@@ -157,6 +171,7 @@ def loggedin():
   except Exception, e:
     app.logger.error(e)
 
+#Add a movie
 @app.route('/add_movie', methods=['GET', 'POST'])
 def add_movie():
   this_route = url_for('add_movie')
@@ -164,11 +179,14 @@ def add_movie():
   try:
     form = add()
     db = get_db()
+#Unsure how to use the autoincrement on an sqlite3 database so creaeted this to
+#find the max id and add one
     getmovieid = db.execute('''SELECT MAX(id)+1 FROM movie''')
     movieid = [dict(id=row[0]) for row in getmovieid.fetchall()]
     getgenres = db.execute('''SELECT id, genre FROM genre ORDER BY id DESC''')
     genres = [dict(id=row[0], genre=row[1]) for row in getgenres.fetchall()]
     if request.method == 'POST':
+#Get for results and inser them into the movie and genre key table
       id = request.form.get('movieid')
       title = request.form.get('title')
       tagline = request.form.get('tagline')
@@ -186,6 +204,7 @@ def add_movie():
       db.execute('''INSERT INTO movie_genre_key VALUES (?, ?), (?, ?), (?,
       ?)''', (id, genre, id, genre2, id, genre3))
       db.commit()
+#Redirect to add actor to add the actors for the previously added film
       return redirect(url_for('add_actor'))
     else:
       return render_template('add_movie.html', form=form, movieid=movieid,
@@ -193,6 +212,8 @@ def add_movie():
   except Exception, e:
     app.logger.error(e)
 
+#This is wher the add actor will be implenented at the moment this redirects to
+#the home page
 @app.route('/add_actor', methods=['GET', 'POST'])
 def add_actor():
   this_route = url_for('add_actor')
@@ -202,6 +223,7 @@ def add_actor():
   except Exception, e:
     app.logger.error(e)
 
+#Custom 404 and 401 erro pages
 @app.errorhandler(404)
 def page_not_found(e):
   app.logger.error(e)
@@ -212,6 +234,7 @@ def unauthorised(e):
   app.logger.error(e)
   return render_template('401.html')
 
+#App config and logging
 def init(app):
   config = ConfigParser.ConfigParser()
   try:
