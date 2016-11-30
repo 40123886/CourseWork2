@@ -7,6 +7,7 @@ from flask import Flask, render_template, url_for, g, request, redirect, Respons
 from forms import add
 from werkzeug import secure_filename
 from flask_login import LoginManager, UserMixin, login_required
+from flask import jsonify
 
 app = Flask(__name__)
 app.secret_key = 'this_is_the_secret_key'
@@ -101,7 +102,7 @@ def actors():
   except Exception, e:
     app.logger.error(e)
 
-@app.route('/movies/selected', methods=['POST', 'GET'])
+@app.route('/movies/selected')
 def selected_movie():
   this_route = url_for('selected_movie')
   app.logger.info("Selected a movie" + this_route)
@@ -197,7 +198,7 @@ def add_actor():
   this_route = url_for('add_actor')
   app.logger.info("Adding actor" + this_route)
   try:
-    return redirect(url_for('/'))
+    return redirect(url_for('root'))
   except Exception, e:
     app.logger.error(e)
 

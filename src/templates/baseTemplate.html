@@ -4,6 +4,7 @@
     rel="stylesheet"/>
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
     rel="stylesheet"/>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <title>Online Movie Database</title>
   </head>
   <body>
@@ -27,8 +28,8 @@
           </ul>
           <form class="navbar-form navbar-left">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="search">
-              <button type="submit" class="btn btn-default">Submit</button>
+              <input id="search" type="text" class="form-control" placeholder="search">
+              <button id="search_button" type="submit" class="btn btn-default">Submit</button>
             </div>
           </form>
         </div>
@@ -44,5 +45,6 @@
     src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/movie.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   </body>
 </html>
